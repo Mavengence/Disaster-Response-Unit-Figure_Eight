@@ -1,5 +1,5 @@
 ## Content
-
+```
 - app
 | - template
 | |- master.html  # main page of web app
@@ -17,7 +17,7 @@
 |- classifier.pkl  # saved model
 
 - README.md
-
+```
 ## Getting Started
 
 Clone the repository, to get our Notebooks, Presentation and Project Report.
