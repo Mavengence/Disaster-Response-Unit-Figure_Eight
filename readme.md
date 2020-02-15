@@ -1,3 +1,13 @@
+# Disaster Response Unit Web-App
+## by Tim Löhr
+***Disaster Response Unit Pipeline Project for Udacity's Data Scientist Nanodegree Program***
+
+### Motivation
+In this project an ETL ("extract-transform-load") pipeline as well as a ML ("machine learning") pipeline is being build to train a model to categorize messages from the internet, if and how they are related to disasters like floods, riots etc. The trained model is then being used to be included in a web-app which allows entering a new message and obtaining the predictions regarding disaster related categories.  
+
+The running app looks like the following:
+![app screenshot](images/app.png)
+
 ## Content
 ```
 - app
@@ -23,15 +33,14 @@
 Clone the repository, to get our Notebooks, Presentation and Project Report.
 
 ```
-git clone https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis.git
+git clone https://github.com/Mavengence/Disaster-Response-Unit-Figure_Eight.git
 ```
 
 ### Prerequisites
 
-- Of course you need git to get the source
+- You need git to get the source
 - If you want to compile the report or the presentation by ur self u need a LaTex Compiler for your OS and maybe an IDE which makes things easier
 - If you want to compile, train and play with our Code you need a python working environment. We used Jupyter Notebooks. The requiered packeges you can see in the Notebooks itself.
-- Get the [Dataset](https://www.kaggle.com/airbnb/seattle) from Kaggle.com
 
 ### Instructions for execution
 1. Run the following commands in the project's root directory to set up the database and model.
