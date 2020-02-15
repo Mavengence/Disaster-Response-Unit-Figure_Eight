@@ -78,8 +78,8 @@ def save_data(df, database_filename):
     """
      # save to database
     try:
-        engine = create_engine('sqlite:///etl-pipeline.db')
-        df.to_sql('data/etl-pipeline', engine, index=False)
+        engine = create_engine('sqlite:///'+database_filename)
+        df.to_sql(database_filename, engine, index=False, if_exists='replace')
     except:
         print('Already saved')  
 
