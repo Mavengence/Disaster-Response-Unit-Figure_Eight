@@ -33,20 +33,18 @@ git clone https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis.git
 - If you want to compile, train and play with our Code you need a python working environment. We used Jupyter Notebooks. The requiered packeges you can see in the Notebooks itself.
 - Get the [Dataset](https://www.kaggle.com/airbnb/seattle) from Kaggle.com
 
-### Run the Notebook
-Open a Terminal Window and type
+### Instructions for execution
+1. Run the following commands in the project's root directory to set up the database and model.
 
-```
-cd/Disaster-Response-Unit-Figure_Eight python run.py
-```
+    - To run the ETL pipeline that cleans data and stores the data in the database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+    - To run the Machine Learning and NLP pipeline that trains the classifier and saves it as pickle file
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 
-Now, open another Terminal Window.
+2. Run the following command in the app's directory to run your web app.
+    `python run.py`
 
-Type
-
-```
-env|grep WORK
-```
+3. Go to http://0.0.0.0:3001/
 
 ### Deployment
 
