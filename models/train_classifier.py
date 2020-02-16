@@ -33,7 +33,7 @@ def load_data(database_filepath):
 
     # load data from database
     engine = create_engine('sqlite:///'+database_filepath)
-    df = pd.read_sql_table(database_filepath, con=engine)
+    df = pd.read_sql_table(database_filepath, con=engine)[:300]
     X = df['message']
     y = df.drop(columns=['message', 'genre'], axis=1)
     target_names = [column for column in y.columns if column != 'message']
@@ -86,7 +86,7 @@ def build_model():
 
 
     # gridsearch pipeline with paramgrid
-    cv = GridSearchCV(pipeline, param_grid=parameters, cv=2, scoring='f1_weighted')
+    cv = GridSearchCV(pipeline, param_grid=parameters, cv=2, scoring='accuracy', verbose=10)
 
     return cv
 
@@ -116,6 +116,7 @@ def save_model(model, model_filepath):
     Output:
         - no return, saves the model as .pkl
     """
+
     pickle.dump(model, open(model_filepath, 'wb'))
 
 

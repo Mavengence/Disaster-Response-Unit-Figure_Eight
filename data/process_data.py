@@ -77,11 +77,8 @@ def save_data(df, database_filename):
         no output, only a db database file will be created for the input filename and DataFrame
     """
      # save to database
-    try:
-        engine = create_engine('sqlite:///'+database_filename)
-        df.to_sql(database_filename, engine, index=False, if_exists='replace')
-    except:
-        print('Already saved')  
+    engine = create_engine('sqlite:///'+database_filename)
+    df.to_sql(database_filename, engine, index=False, if_exists='replace')
 
 
 def main():
