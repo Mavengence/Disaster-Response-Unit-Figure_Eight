@@ -38,6 +38,7 @@ git clone https://github.com/Mavengence/Disaster-Response-Unit-Figure_Eight.git
 
 ### Prerequisites
 
+- You should use Python version 3
 - You need git to get the source
 - If you want to compile the report or the presentation by ur self u need a LaTex Compiler for your OS and maybe an IDE which makes things easier
 - If you want to compile, train and play with our Code you need a python working environment. We used Jupyter Notebooks. The requiered packeges you can see in the Notebooks itself.
@@ -51,6 +52,7 @@ git clone https://github.com/Mavengence/Disaster-Response-Unit-Figure_Eight.git
         `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 
 2. Run the following command to start the local host and the Flask Server.
+
     `python app/run.py`
 
 3. Go to http://0.0.0.0:3001/
