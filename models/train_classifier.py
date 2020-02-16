@@ -33,7 +33,7 @@ def load_data(database_filepath):
 
     # load data from database
     engine = create_engine('sqlite:///'+database_filepath)
-    df = pd.read_sql_table(database_filepath, con=engine)[:300]
+    df = pd.read_sql_table(database_filepath, con=engine)
     X = df['message']
     y = df.drop(columns=['message', 'genre'], axis=1)
     target_names = [column for column in y.columns if column != 'message']
