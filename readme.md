@@ -1,5 +1,5 @@
 # Disaster Response Unit Web-App
-## by Tim Löhr
+## Tim Löhr
 ***Disaster Response Unit Pipeline Project for Udacity's Data Scientist Nanodegree Program***
 
 ### Motivation
@@ -50,8 +50,8 @@ git clone https://github.com/Mavengence/Disaster-Response-Unit-Figure_Eight.git
     - To run the Machine Learning and NLP pipeline that trains the classifier and saves it as pickle file
         `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 
-2. Run the following command in the app's directory to run your web app.
-    `python run.py`
+2. Run the following command to start the local host and the Flask Server.
+    `python app/run.py`
 
 3. Go to http://0.0.0.0:3001/
 
