@@ -1,9 +1,8 @@
 ![app screenshot](images/figure-eight.png)
 
-<p align="center">
-<h1>Disaster Response Unit Web-App</h1>
-<h2>Tim Löhr</h2>
-</p>
+# Disaster Response Unit Web-App
+## Tim Löhr
+
 ***Disaster Response Unit Pipeline Project for Udacity's Data Scientist Nanodegree Program***
 
 ### Motivation
